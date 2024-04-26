@@ -1,0 +1,17 @@
+button.back.btn.btn-success
+  a(href="/dashboard") Back To Dashboard
+button.logout.btn.btn-danger
+  a(href="/auth/logout") Log Out
+.card
+  .card-header Your Approved Shifts
+  .card-body
+    #table.table.table-striped
+      table.table.table-striped
+        thead.thead-dark
+          tr
+            th(scope="col") Days
+            th(scope="col") Date
+            th(scope="col") Time Range
+            th(scope="col") Time Zone
+            // Add more headers as needed
+        tbody

@@ -1,0 +1,46 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    flex-direction: column;
+    width: 100vw;
+}
+        .outer{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .card{
+            width: 45%;
+            min-width: 400px;
+            margin: 25px;
+        }
+        .form-group{
+            margin: 10px;
+        }
+
+
+        .logout{
+            position: fixed;
+            top : 0;
+            right: 0;
+            margin: 30px;
+        }
+        .back{
+            position: fixed;
+            top : 0;
+            left: 0;
+            margin: 30px;
+        }
+        
+        .btn a{
+            text-decoration: none !important;
+            color: white !important;
+        }
+        .btn a:hover {
+            color: white !important;
+        }

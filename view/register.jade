@@ -1,0 +1,21 @@
+.card
+  .card-header
+    h5 Register
+  .card-body
+    form(method='POST', action='/auth/save-user', id='registerForm')
+      .form-group
+        label(for='exampleInputUser1') Name
+        input.form-control(type='text',name="name" id='exampleInputUser1', placeholder='Enter Name')
+      .form-group
+        label(for='exampleInputEmail1') Email address
+        input.form-control(type='email',name = "email" id='exampleInputEmail1', aria-describedby='emailHelp', placeholder='Enter email')
+        small.form-text.text-muted We'll never share your email with anyone else.
+      .form-group
+        label(for='exampleInputPassword1') Password
+        input.form-control(type='password',name = "password" id='exampleInputPassword1', placeholder='Password')
+      .form-group
+        label(for='exampleInputPassword2') ReEnter Password
+        input.form-control(type='password', id='exampleInputPassword2', placeholder='ReEnter Password')
+      button.btn.btn-primary(type='submit') Submit
+    button.btn.btn-secondary(type='button')
+        a(href='/auth/login') Already a Member? :Login

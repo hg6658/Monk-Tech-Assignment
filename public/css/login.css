@@ -1,0 +1,26 @@
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);;
+}
+.card{
+  width: 50%;
+}
+.form-group{
+margin-bottom: 10px;
+}
+
+
+.btn-secondary{
+  margin: 10px;
+}
+
+.btn-secondary a{
+  text-decoration: none !important;
+  color: white !important; 
+}
+.btn-secondary a:hover{
+  color: white !important;
+}
