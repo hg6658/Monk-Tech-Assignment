@@ -10,7 +10,7 @@ let port = process.env.PORT;
 let passport = require('./config/passportLocal');
 let controller = require('./controller');
 app.set('views', path.join(__dirname, 'view'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(require('express-session')({

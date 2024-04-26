@@ -30,31 +30,31 @@ html(lang='en')
     title= title
   body
     if partial === 'login'
-      include login.jade
+      include login.pug
       script(src="/js/login.js")
     else if partial === 'register'
-      include register.jade
+      include register.pug
       script(src='/js/register.js')
     else if partial === 'home'
       if type === 'employee'
-        include employee.jade 
+        include employee.pug 
         script(src='/js/employee.js')
       else if type === 'admin' 
-        include admin.jade
+        include admin.pug
         script(src='/js/admin.js')
     else if partial === 'availability'
       if type === 'employee'
-        include empAvail.jade 
+        include empAvail.pug 
         script(src='/js/empAvail.js')
       else if type === 'admin'
-        include adminAvail.jade
+        include adminAvail.pug
         script(src='/js/adminAvail.js')
     else if partial === 'shift'
       if type === 'employee'
-        include empShift.jade
+        include empShift.pug
         script(src='/js/empShift.js') 
       else if type === 'admin'
-        include adminShift.jade    
+        include adminShift.pug    
         script(src='/js/adminShift.js')    
     script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
     script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
